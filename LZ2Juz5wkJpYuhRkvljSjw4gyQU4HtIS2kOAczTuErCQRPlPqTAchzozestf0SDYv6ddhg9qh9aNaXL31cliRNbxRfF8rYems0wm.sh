@@ -41,7 +41,7 @@ for i in $(cat "$1"|sed 's/\;/ /g');do
 		echo "echo \"\$${i[1]}\""
 		;;
 		"RNG")
-		echo "${i[1]}=\$(bc<<<\"ibase=A;obase=A;\$(tr -cd '0-9'</dev/urandom|head -c50)%${i[1]}\")"
+		echo "${i[1]}=\$(bc<<<\"ibase=A;obase=A;\$(tr -cd '0-9'</dev/urandom|head -c50)%${i[2]}\")"
 		;;
 		"ILT")
 		echo "[ \"\$${i[1]}\" -lt \"${i[1]}\" ]&&{"
