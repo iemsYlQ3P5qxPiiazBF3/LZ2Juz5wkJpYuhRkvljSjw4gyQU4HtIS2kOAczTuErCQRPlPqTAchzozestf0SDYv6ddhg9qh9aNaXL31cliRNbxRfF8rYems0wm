@@ -1,0 +1,10 @@
+DEF,A,1
+DEF,B,2
+DEF,C,0
+WNT,B,0
+ DIS,A
+ MUL,A,B
+ EQU,A,C
+  DEF,A,2
+ CEQ
+DNE
