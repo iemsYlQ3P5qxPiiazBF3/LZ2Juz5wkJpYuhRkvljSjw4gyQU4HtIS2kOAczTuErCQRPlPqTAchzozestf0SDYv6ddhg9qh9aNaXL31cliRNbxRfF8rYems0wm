@@ -1,0 +1,13 @@
+DEF,A,1
+DEF,B,1
+DEF,C,0
+WNT,A,0
+ XOR,C,C
+ XOR,C,A
+
+ ADD,A,B
+ XOR,B,B
+ XOR,B,C
+
+ DIS,A
+DNE
